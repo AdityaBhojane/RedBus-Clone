@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+    <title>RedBus Clone</title>
+    <!-- favicon -->
+    <link rel="icon" href="./RedBus clone Images/bus-icon.png">
+    <!-- cdn -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body class="Tsize font-Montserrat">
+    <!-- header section  -->
+    <header class="">
+        <!-- navigation section -->
+        <nav class="flex items-center justify-around h-[5vw]">
+            <div class="flex gap-[1vw] items-center">
+                <img src="./RedBus clone Images/bus-icon.png" alt="" class="h-[2.5vw] cursor-pointer">
+                <div class="w-[0.011vw] h-[1vw] bg-[#606060] mx-[2vw]"></div>
+                <ul class="flex items-center gap-[2.5vw] ">
+                    <li class="bg-[#D84E55] px-[0.6vw] py-[0.1vw] rounded-[0.5vw] cursor-pointer"><img class="images m-auto brightness-0 invert p-[0.2vw]" src="./RedBus clone Images/rb_vertical.svg" alt="bus-logo"><a href="#" class="text-[0.8vw] text-white">Bus Tickets</a></li>
+                    <li class=""><img class="images m-auto" src="./RedBus clone Images/ryde_vertical.svg" alt="ryde-logo"><a href="#" class="text-[0.8vw]">Cab Rental</a></li>
+                    <li class=""><img class="images m-auto" src="./RedBus clone Images/rail_vertical.svg" alt="rail-logo"><a href="#" class="text-[0.8vw]">Train Tickets</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-[2vw] items-center text-[0.8vw]">
+                <div class="flex items-center gap-[0.5vw] ">
+                    <img src="./RedBus clone Images/headset.png" alt="help-section" class="h-[1vw]">
+                    <h3>Help</h3>
+                </div>
+                <div class="flex items-center gap-[0.5vw] relative">
+                    <img src="./RedBus clone Images/user.svg" alt="Account" class="h-[1vw]">
+                    <h3>Account</h3>
+                    <div class="group">
+                        <button>     
+                            <img src="./RedBus clone Images/down.svg" alt="down-section" class="h-[0.52w] focus:outline-none w-[0.7vw]">
+                        </button>
+                        <div class="w-[9vw] h-[17vw] rounded-2xl absolute top-[1.5vw] left-[-1.5vw] invisible group-hover:visible shadow-2xl bg-[#fffcfc] transition-all duration-500">
+                            <ul class="text-center">
+                                <li class="text-[0.8vw] p-[0.8vw] cursor-pointer hover:bg-[#ccc] my-[0.5vw]">Cancel Tickets</li>
+                                <li class="text-[0.8vw] p-[0.8vw] cursor-pointer hover:bg-[#ccc] my-[0.5vw]">Change Travel Date</li>
+                                <li class="text-[0.8vw] p-[0.8vw] cursor-pointer hover:bg-[#ccc] my-[0.5vw]">Show My Tickets</li>
+                                <li class="text-[0.8vw] p-[0.8vw] cursor-pointer hover:bg-[#ccc] my-[0.5vw]">Email/SMS</li>
+                                <li class="text-[0.8vw] p-[0.8vw] cursor-pointer hover:bg-[#ccc] my-[0.5vw]">Login/sign up</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-hero-image max-w-[100vw] bg-cover h-[30vw]">
+        <div class="text-center relative top-[8vw] font-extrabold text-white text-[1.5vw]">
+            <h1>India's No. 1 Online Bus Ticket Booking Site</h1>
+        </div>
+        <div class="h-full">
+            <form action="#" class="flex justify-center items-center h-full relative bottom-[3.5vw]">
+                <div class="flex items-center gap-[2vw] bg-white text-[1vw] rounded-3xl pl-[1vw]">
+                    <!-- Form -->
+                    <div class="flex relative gap-2">
+                        <img class="w-[1vw]" src="./RedBus clone Images/bus.svg" alt="bug svg">
+                        <label for="form" class="">Form</label>
+                        <input class="w-[5vw] focus:outline-none" type="text">
+                    </div>
+                    <div class="relative ">
+                        <div class="px-[0.5vw] py-[0.3vw] border border-[#ccc] rounded-full bg-white relative z-10">
+                            <i class="ri-arrow-left-right-line text-[#8b8b8b]"></i>                        
+                        </div>
+                        <div class="absolute w-[1px] h-[5.5vw] bg-[#ccc] top-[-75%] left-[50%] z-0"></div>
+                    </div>
+                    <!-- To -->
+                    <div class="flex relative gap-2">
+                        <img class="w-[1vw]" src="./RedBus clone Images/bus.svg" alt="bug svg">
+                        <label for="form">To</label>
+                        <input class="w-[5vw] focus:outline-none" type="text">
+                    </div>
+                    <!-- Date -->
+                    <div class="flex relative gap-2">
+                        <i class="ri-calendar-2-line"></i>
+                        <label for="date">Date</label>
+                        <input class="w-[5vw] focus:outline-none" type="datetime" name="date" id="dateInput">
+                    </div>
+                    <button class="font-bold bg-[#D84E55] py-[2vw] px-[2vw] text-white rounded-r-3xl">SEARCH BUSES</button>
+                </div>
+            </form>
+        </div>
+            <!--trending section  -->
+        <section class="w-[60vw] h-[15vw] m-auto bg-white rounded-2xl shadow-2xl relative bottom-[8vw] border-white border-r-[1.5vw]">
+            <div class="flex justify-between items-center p-[1vw]">
+                <div class="">
+                    <h1 class="text-[1.5vw] text-[#565656]">TRENDING OFFERS</h1>
+                </div>
+                <div class="">
+                    <button class="bg-white px-[1vw] py-[0.2vw] border border-black rounded-full">View All</button>
+                </div>
+            </div>
+            <div class="flex overflow-hidden">
+                <!-- coupon cards  -->
+                <div class="p-[1vw]">
+                    <div class="flex items-center justify-between p-[0.5vw] h-[8vw] w-[15vw] text-white bg-gradient-to-r from-[#18489E] to-blue-500 rounded-2xl">
+                        <div class="">
+                            <img class="w-full rounded-full" src="./RedBus clone Images/cardImg1.png" alt="card-coupon">
+                        </div>
+                        <div class="relative left-6">
+                            <span class="text-[0.7vw] bg-[#ffffff56] px-[0.5vw] py-[0.2vw] rounded-full">Bus</span>
+                            <h3 class="text-[0.9vw] font-bold">Save up to Rs 250 on bus tickets</h3>
+                            <p class="text-[0.6vw]">Valid till 29 Feb</p>
+                            <button class="bg-[#ffffff56] px-[0.5vw] text-[0.8vw] font-bold rounded-md border border-dashed">First</button>
+                            <i class="ri-file-copy-line cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- coupon cards 2 -->
+                <div class="p-[1vw]">
+                    <div class="flex items-center justify-between p-[0.5vw] h-[8vw] w-[15vw] text-white bg-gradient-to-r from-[#AE373D] to-[#d55259] rounded-2xl">
+                        <div class="">
+                            <img class="w-full rounded-full" src="./RedBus clone Images/cardImg2.png" alt="card-coupon">
+                        </div>
+                        <div class="relative left-6">
+                            <span class="text-[0.7vw] bg-[#ffffff56] px-[0.5vw] py-[0.2vw] rounded-full">Bus</span>
+                            <h3 class="text-[0.9vw] font-bold">Save up to Rs 250 on bus tickets</h3>
+                            <p class="text-[0.6vw]">Valid till 29 Feb</p>
+                            <button class="bg-[#ffffff56] px-[0.5vw] text-[0.8vw] font-bold rounded-md border border-dashed">First</button>
+                            <i class="ri-file-copy-line cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- coupon cards 3 -->
+                <div class="p-[1vw]">
+                    <div class="flex items-center justify-between p-[0.5vw] h-[8vw] w-[15vw] text-white bg-gradient-to-r from-[#248B5B] to-[#39dc90] rounded-2xl">
+                        <div class="">
+                            <img class="w-full rounded-full" src="./RedBus clone Images/cardImg3.png" alt="card-coupon">
+                        </div>
+                        <div class="relative left-6">
+                            <span class="text-[0.7vw] bg-[#ffffff56] px-[0.5vw] py-[0.2vw] rounded-full">Bus</span>
+                            <h3 class="text-[0.9vw] font-bold">Save up to Rs 250 on bus tickets</h3>
+                            <p class="text-[0.6vw]">Valid till 29 Feb</p>
+                            <button class="bg-[#ffffff56] px-[0.5vw] text-[0.8vw] font-bold rounded-md border border-dashed">First</button>
+                            <i class="ri-file-copy-line cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- coupon cards 4 -->
+                <div class="p-[1vw]">
+                    <div class="flex items-center justify-between p-[0.5vw] h-[8vw] w-[15vw] text-white bg-gradient-to-r from-[#268BA5] to-[#3dd8ff] rounded-2xl">
+                        <div class="">
+                            <img class="w-full rounded-full" src="./RedBus clone Images/cardImg4    .png" alt="card-coupon">
+                        </div>
+                        <div class="relative left-6">
+                            <span class="text-[0.7vw] bg-[#ffffff56] px-[0.5vw] py-[0.2vw] rounded-full">Bus</span>
+                            <h3 class="text-[0.9vw] font-bold">Save up to Rs 250 on bus tickets</h3>
+                            <p class="text-[0.6vw]">Valid till 29 Feb</p>
+                            <button class="bg-[#ffffff56] px-[0.5vw] text-[0.8vw] font-bold rounded-md border border-dashed">First</button>
+                            <i class="ri-file-copy-line cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative top-[5vw] flex justify-center mb-[10vw]">
+                <img src="./RedBus clone Images/adv.webp" alt="web">
+            </div>
+        </section>
+    </main>
+    <!-- Tain section -->
+    <div class="w-[60vw] m-auto mt-[25vw]">
+        <h2 class="text-[1.8vw]">NOW, <span class="font-bold">GET MORE THAN <br> JUST BUS</span> TICKETS  WITH <br> REDBUS!</h2>
+        <div class="flex justify-center">
+            <div class="">
+                <div class="w-[10vw] flex text-[#df464e] py-[1vw] border-b-[0.2vw] border-b-[#e6454d] mb-[1.5vw]">
+                    <img class="w-[2.5vw] m-auto" src="./RedBus clone Images/redRail.svg" alt="rail-logo">
+                    <a href="#" class="text-[0.9vw] font-bold">Train Tickets</a>
+                </div>
+                <p class="text-[#707070] mb-[2vw]">Book IRCTC Train Tickets on redRail simple & superfast<br> booking  process with no service fee + no payment gateway charge.</p>
+                <div class="flex gap-5">
+                    <img src="./RedBus clone Images/railAuthorized.svg" alt="auto">
+                    <p class="font-bold">Authorised IRCTC Partner</p>
+                </div>
+                <div class="flex gap-4">
+                    <img src="./RedBus clone Images/railrefunds.svg" alt="auto">
+                    <p class="font-bold">Instant refunds on UPI payments</p>
+                </div>
+                <div class="flex gap-6">
+                    <img src="./RedBus clone Images/railHasslefree.svg" alt="auto">
+                    <p class="font-bold">Hassle- free customer support</p>
+                </div>
+                <br>
+                <button class="bg-[#d6363e] px-[2vw] py-[0.7vw] text-white rounded-lg">Book Train Tickets</button>
+            </div>
+            <div class="relative bottom-20">
+                <img src="./RedBus clone Images/railPop.svg" alt="rail">
+            </div>
+        </div>
+    </div>
+    <!--App install section  -->
+    <div class="w-[60vw] h-[20vw] m-auto">
+        <div class="bg-appInstall bg-cover w-full h-full p-[2vw]">
+            <div class="">
+                <h2 class="text-[2vw] text-white mb-[1.2vw]">ENJOY THE APP!</h2>
+                <div class="flex h-full items-center gap-10  ">
+                    <div class="bg-white w-[20vw] p-[1vw] rounded-xl"> 
+                        <div class="flex gap-2">
+                            <img src="./RedBus clone Images/tick.svg" alt="tick">
+                            <p class="">Quick access</p>
+                        </div>
+                        <div class="flex gap-2 mb-[1vw]">
+                            <img src="./RedBus clone Images/tick.svg" alt="tick">
+                            <p class="">Superior live tracking</p>
+                        </div>
+                        <div class="flex gap-5">
+                            <div class="">
+                                <h3 class="font-bold text-[1.2vw] flex items-center gap-2">4.5 <i class="ri-star-fill text-[1vw]"></i></h3>
+                                <p class="text-[0.8vw]">50M+ downloads <br> <span class="font-bold">Play Store</span> </p>
+                            </div>
+                            <div class="w-[0.1vw] h-[5vw] bg-[#ccc]"></div>
+                            <div class="">
+                                <h3 class="font-bold text-[1.2vw] flex items-center gap-2">4.6 <i class="ri-star-fill text-[1vw]"></i></h3>
+                                <p class="text-[0.8vw]">50M+ downloads <br> <span class="font-bold">App Store</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-white">
+                            <p>Scan to <br> download</p>
+                            <img src="./RedBus clone Images/qrCode.svg" alt="QR">
+                        </div>
+                    </div>
+                    <div class="text-white  ">
+                        <p>Download the <br> App on</p>
+                        <a href="#"><img class="mb-[1vw]" src="./RedBus clone Images/playStore.svg" alt="play-store"></a>
+                        <a href="#"><img src="./RedBus clone Images/appStore.svg" alt="app-store"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Primo -->
+    <div class="w-[60vw] m-auto">
+        <div class="m-[2vw] flex justify-center">
+            <img src="./RedBus clone Images/primoTopBanner.svg" alt="">
+        </div>
+        <div class="flex gap-5">
+                <div class="flex items-center justify-around bg-gradient-to-r from-[#354896] to-[#794687] w-[20vw] h-[9vw] p-[1vw] rounded-2xl">
+                    <img src="./RedBus clone Images/primoSubImg1.svg" alt="primo photo 1">
+                    <div class="text-white">
+                        <h3 class="font-bold text-[1.2vw]">1 of 5 buses <br> qualify</h3>
+                        <p class="text-[0.8vw]">Primo’s strict safety <br> qualification ensures a <br> safer travel for you</p>
+                    </div> 
+                </div>
+                <div class="flex items-center justify-around bg-gradient-to-r from-[#354896] to-[#794687] w-[20vw] h-[9vw] p-[1vw] rounded-2xl">
+                    <img src="./RedBus clone Images/primoSubImg1.svg" alt="primo photo 1">
+                    <div class="text-white">
+                        <h3 class="font-bold text-[1.2vw]">1 of 5 buses <br> qualify</h3>
+                        <p class="text-[0.8vw]">Primo’s strict safety <br> qualification ensures a <br> safer travel for you</p>
+                    </div> 
+                </div>
+                <div class="flex items-center justify-around bg-gradient-to-r from-[#354896] to-[#794687] w-[20vw] h-[9vw] p-[1vw] rounded-2xl">
+                    <img src="./RedBus clone Images/primoSubImg1.svg" alt="primo photo 1">
+                    <div class="text-white">
+                        <h3 class="font-bold text-[1.2vw]">1 of 5 buses <br> qualify</h3>
+                        <p class="text-[0.8vw]">Primo’s strict safety <br> qualification ensures a <br> safer travel for you</p>
+                    </div> 
+                </div>
+        </div>
+    </div>
+   <!-- partner section -->
+   <div class="mt-[5vw] w-[60vw] m-auto">
+       <h3 class="text-[2vw]">PARTNERED WITH</h3>
+       <div class="flex justify-between items-center h-[5vw] mb-[2vw]">
+           <h4 class="text-[1.5vw]">25 RTCs</h4>
+           <button class="px-[1vw] py-[0.5vw] border rounded-2xl">View all</button>
+        </div>
+        <div class="flex justify-center items-center w-full h-[5vw] gap-[2vw]">
+            <div class="w-full h-full text-center  cursor-pointer">
+                <img class="w-full" src="./RedBus clone Images/partner1.png" alt="partner-img">
+                <p>APSRTC</p>
+            </div>
+            <div class="w-full h-full text-center cursor-pointer">
+                <img class="w-full " src="./RedBus clone Images/partner2.svg" alt="partner-img">
+                <p>APSRTC</p>
+            </div>
+            <div class="w-full h-full text-center cursor-pointer">
+                <img class="w-full h" src="./RedBus clone Images/partner3.png" alt="partner-img">
+                <p>APSRTC</p>
+            </div>
+            <div class="w-full h-full text-center cursor-pointer">
+                <img class="w-full h" src="./RedBus clone Images/partner4.png" alt="partner-img">
+                <p>APSRTC</p>
+            </div>
+            <div class="w-full h-full text-center cursor-pointer">
+                <img class="w-full h" src="./RedBus clone Images/partner5.svg" alt="partner-img">
+                <p>APSRTC</p>
+            </div>
+            <div class="w-full h-full text-center cursor-pointer">
+                <img class="w-full h" src="./RedBus clone Images/partner6.png" alt="partner-img">
+                <p>APSRTC</p>
+            </div>
+            <div class="w-full h-full text-center cursor-pointer">
+                <img class="w-full h" src="./RedBus clone Images/partner7.svg" alt="partner-img">
+                <p>APSRTC</p>
+            </div>
+            <div class="w-full h-full text-center cursor-pointer">
+                <img class="w-full h" src="./RedBus clone Images/partner8.svg" alt="partner-img">
+                <p>APSRTC</p>
+            </div>
+        </div>
+        <!-- privet buses -->
+        <div class="mt-[10vw] flex justify-between">
+            <h3 class="text-[1.5vw]">3500+ Private Bus Operators</h3>
+            <button class="px-[1vw] py-[0.5vw] border rounded-2xl">View all</button>
+        </div>
+        <div class="mt-[2vw]">
+            <ul class="flex justify-between text-[#6a6a6a]">
+                <div>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">SRS Travels</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Rajdhani Express</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Patel Travels</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Sri Krishna Travels</li>
+                </div>
+                <div>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">A One Travels</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]"> Evacay Bus</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">VRL Travels</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">JBT Travels</li>
+                </div>
+                <div>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Humsafar Travels</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">B K Travels</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Kallada Travels</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Chartered Speed</li>
+                </div>
+                <div>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Shatabdi Travels</li>
+                <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Mahasagar Travels</li>
+                <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Capital Travels</li>
+                <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">KPN Travels</li>
+                </div>
+                <div>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Bengal Tiger</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Eagle Travels</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Raj Express</li>
+                    <li class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">Orange Travels</li>
+                </div>
+            </ul>
+        </div>
+        <!-- information -->
+        <div class="mt-[5vw]">
+            <h3 class="text-[1.5vw] mb-[2vw]">BOOK BUS TICKETS ONLINE</h3>
+            <p class="w-[60vw] text-[#797979] mb-[2vw]">redBus is India's largest brand for online bus ticket booking and offers an easy-to-use online bus ticket and train ticket booking service, With over 36 million satisfied customers, 3500+ bus operators to choose from, and plenty of offers on bus ticket booking, redBus makes road journeys super convenient for travelers. A leading platform for booking bus tickets, redBus has been the leader in online bus booking over the past 17 years across thousands of cities and lakhs of routes in India.</p>
+            <p class="w-[60vw] text-[#797979]"> Booking a bus ticket online on redBus app or website is very simple. You can download the redBus app or visit redbus.in and enter your source, destination & travel date to check the top-rated bus services available. You can then compare bus prices, user ratings & bus amenities, select your preferred seat, boarding & dropping points and make the payment using multiple payment options like UPI, debit or credit card, net banking and more. With redBus get assured safe & secure payment methods and guaranteed travel with the best seat and bus operato... <span class="text-blue-500 font-bold text-[0.8vw]">Read more</span> </p>
+        </div>
+        <!-- Global Presence -->
+        <div class="">
+            <h3 class="text-[2vw] mt-[2.5vw]">GLOBAL PRESENCE</h3>
+            <div class="flex justify-between items-center gap-[2vw] mt-[2vw]">
+                <div class="w-full h-full text-center cursor-pointer">
+                    <img class="w-full h" src="./RedBus clone Images/Colombia.svg" alt="partner-img">
+                    <p class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">COLUMBIA</p>
+                </div>
+                <div class="w-full h-full text-center cursor-pointer">
+                    <img class="w-full h" src="./RedBus clone Images/India.svg" alt="partner-img">
+                    <p class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">INDIA</p>
+                </div>
+                <div class="w-full h-full text-center cursor-pointer">
+                    <img class="w-full h" src="./RedBus clone Images/Indonesia.svg" alt="partner-img">
+                    <p class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">INDONESIA</p>
+                </div>
+                <div class="w-full h-full text-center cursor-pointer">
+                    <img class="w-full h" src="./RedBus clone Images/Malaysia.svg" alt="partner-img">
+                    <p class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">MALAYSIA</p>
+                </div>
+                <div class="w-full h-full text-center cursor-pointer">
+                    <img class="w-full h" src="./RedBus clone Images/Peru.svg" alt="partner-img">
+                    <p class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">PERU</p>
+                </div>
+                <div class="w-full h-full text-center cursor-pointer">
+                    <img class="w-full h" src="./RedBus clone Images/Singapore.svg" alt="partner-img">
+                    <p class="cursor-pointer my-[1.2vw] hover:bg-[#ccc] hover:rounded-2xl px-[0.5vw]">SINGAPORE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-[#F7F7F7] ">
+        <div class="w-[60vw] m-auto py-[2vw]">
+            <div class="flex justify-between items-center text-[#6a6a6a] text-[0.9vw] my-[4vw]">
+                <ul>
+                    <li class="cursor-pointer font-bold">Top RTCs</li>
+                    <li class="cursor-pointer">APSRTC</li>
+                    <li class="cursor-pointer">GSRTC</li>
+                    <li class="cursor-pointer">MSRTC</li>
+                    <li class="cursor-pointer">TNSTC</li>
+                    <li class="cursor-pointer">View All</li>
+                </ul>
+                <ul>
+                    <li class="cursor-pointer font-bold">OTHER</li>
+                    <li class="cursor-pointer">TSRTC</li>
+                    <li class="cursor-pointer">SBRTC</li>
+                    <li class="cursor-pointer">RSRTC</li>
+                    <li class="cursor-pointer">Kerla RTC</li>
+                    <li class="cursor-pointer">View All</li>
+                </ul>
+                <ul>
+                    <li class="cursor-pointer font-bold">Top bus routes</li>
+                    <li class="cursor-pointer">Hyderabad to Bangalore Bus</li>
+                    <li class="cursor-pointer">Bangalore to Chennai Bus</li>
+                    <li class="cursor-pointer">Pune to Bangalore Bus</li>
+                    <li class="cursor-pointer">Mumbai to Bangalore Bus</li>
+                    <li class="cursor-pointer">View All</li>
+                </ul>
+                <ul>
+                    <li class="cursor-pointer font-bold">Top cities</li>
+                    <li class="cursor-pointer">Hyderabad Bus Tickets</li>
+                    <li class="cursor-pointer">Bangalore Bus Tickets</li>
+                    <li class="cursor-pointer">Pune Bus Tickets</li>
+                    <li class="cursor-pointer">Mumbai Bus Tickets</li>
+                    <li class="cursor-pointer">View All</li>
+                </ul>
+                <ul>
+                    <li class="cursor-pointer font-bold">redRail</li>
+                    <li class="cursor-pointer">Book Train Tickets</li>
+                    <li class="cursor-pointer">PNR Status</li>
+                    <li class="cursor-pointer">Live Train Status</li>
+                    <li class="cursor-pointer">Train Seat Availability</li>
+                    <li class="cursor-pointer">Trains between Stations</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="flex justify-between text-[#6a6a6a] text-[0.9vw] my-[2vw]">
+                <div class="w-[12vw]">
+                    <img class="w-[5vw]" src="./RedBus clone Images/bus-icon.png" alt="logo">
+                    <p class="text-[0.7vw] text-[#646464]">redBus is the world's largest online bus ticket booking service trusted by over 25 million happy customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile apps for all major routes.</p>
+                </div>
+                <ul>
+                    <li class="cursor-pointer font-bold ">About redBus</li>
+                    <li class="cursor-pointer">About us</li>
+                    <li class="cursor-pointer">Investor Relations</li>
+                    <li class="cursor-pointer">Mobile version</li>
+                    <li class="cursor-pointer">redBus on mobile</li>
+                    <li class="cursor-pointer">Sitemap</li>
+                    <li class="cursor-pointer">Offers</li>
+                    <li class="cursor-pointer">Careers</li>
+                    <li class="cursor-pointer">Values   </li>
+                </ul>
+                <ul>
+                    <li class="cursor-pointer font-bold">Info</li>
+                    <li class="cursor-pointer">T&C</li>
+                    <li class="cursor-pointer">Privacy policy</li>
+                    <li class="cursor-pointer">FAQ</li>
+                    <li class="cursor-pointer">Blog</li>
+                    <li class="cursor-pointer">Agent registration</li>
+                    <li class="cursor-pointer">Insurance partner</li>
+                    <li class="cursor-pointer">User agreement  </li>
+                </ul>
+                <ul>
+                    <li class="cursor-pointer font-bold">Global Sites</li>
+                    <li class="cursor-pointer">India</li>
+                    <li class="cursor-pointer">Singapore</li>
+                    <li class="cursor-pointer">Malaysia</li>
+                    <li class="cursor-pointer">Indonesia</li>
+                    <li class="cursor-pointer">Peru</li>
+                    <li class="cursor-pointer">Colombia</li>
+                
+                </ul>
+                <ul>
+                    <li class="cursor-pointer font-bold">Our Partners</li>
+                    <li class="cursor-pointer">Goibibo Bus</li>
+                    <li class="cursor-pointer">Goibibo Hotels</li>
+                    <li class="cursor-pointer">Makemytrip Hotels</li>
+                
+                </ul>
+            </div>
+            <hr>
+            <div class="flex justify-between mt-[1vw]">
+                <p class="text-[#727272] text-[0.7vw]">Ⓒ 2024 Redbus India Pvt Ltd. All rights reserved</p>
+                <div class="flex gap-5">
+                    <img src="./RedBus clone Images/social_facebook_new.svg" alt="fb">
+                    <img src="./RedBus clone Images/social_linkedin_new.svg" alt="linkedin">
+                    <img src="./RedBus clone Images/social_twitter_new.svg" alt="twitter">
+                    <img src="./RedBus clone Images/social_instagram_new.svg" alt="instagram">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
